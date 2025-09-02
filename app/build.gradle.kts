@@ -85,4 +85,9 @@ dependencies {
     // ✅ Debugging
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Jetpack Navigation for Compose
+    implementation("androidx.navigation:navigation-compose:2.7.0")
+// Optional: Accompanist for animated transitions between composables
+    implementation("com.google.accompanist:accompanist-navigation-animation:0.30.1")
 }
