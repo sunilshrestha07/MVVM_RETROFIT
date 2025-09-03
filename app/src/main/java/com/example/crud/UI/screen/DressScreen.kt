@@ -28,18 +28,20 @@ fun DressScreen(viewModel: DressViewModel = DressViewModel(), onGoToAnother: () 
         Text("Dress Lists")
 
         LazyColumn(
-            modifier = Modifier.fillMaxSize()
+            modifier = Modifier.fillMaxSize(),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
             items(dressList.value) { item ->
                 Text(item.name)
                 Text(item.username)
                 Text(item.email)
-                Spacer(modifier = Modifier.height(40.dp))
                 FilledTonalButton(onClick = {
                     onGoToAnother()
                 }) {
                     Text("Go to Another Screen")
                 }
+                Spacer(modifier = Modifier.height(40.dp))
+
             }
         }
     }
